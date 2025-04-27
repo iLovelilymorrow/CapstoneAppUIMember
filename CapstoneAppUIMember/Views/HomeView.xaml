@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CapstoneAppUIMember.Views.HomeView"
+             BackgroundColor="#747474">
+
+    <VerticalStackLayout>
+
+        <HorizontalStackLayout Margin="45,50,0,0">
+
+            <Image WidthRequest="90" HeightRequest="90" BackgroundColor="Brown"/>
+
+            <VerticalStackLayout Margin="9,10,0,0">
+
+                <Label Text="HELLO," TextColor="Black" FontSize="28" FontFamily="Bebas-Regular"/>
+                <Label Text="XXXXX-XXXXX-XXXXX-XX" TextColor="Black" FontSize="19" FontAttributes="Bold" FontFamily="Bebas-Regular"/>
+
+            </VerticalStackLayout>
+
+        </HorizontalStackLayout>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" CornerRadius="20" Padding="0" HeightRequest="210" Margin="45,20,45,0">
+
+            <VerticalStackLayout>
+
+                <Label Text="MEMBERSHIP STATUS: ACTIVE" TextColor="White" FontSize="25" FontFamily="Bebas-Regular" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,25,0,15"/>
+
+                <HorizontalStackLayout>
+                    
+                    <Label Text="30" TextColor="White" FontSize="80" FontFamily="Bebas-Regular" Margin="28,0,5,0"/>
+
+                    <VerticalStackLayout>
+
+                        <Label Text="DAYS LEFT IN YOUR" TextColor="White" FontSize="18" FontFamily="Bebas-Regular" Margin="0,23,0,0"/>
+                        <Label Text="STUDENT MEMBERSHIP" TextColor="White" FontSize="25" FontFamily="Bebas-Regular" FontAttributes="Bold" Margin="0"/>
+
+                    </VerticalStackLayout>
+                    
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+
+        </Frame>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" CornerRadius="20" Margin="45,15,45,0" HeightRequest="230" Padding="0">
+
+            <VerticalStackLayout>
+
+                <Label Text="CURRENT AVAILABLE PACKAGES" TextColor="White" FontAttributes="Bold" FontSize="25" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="15,14,0,0"/>
+
+                <HorizontalStackLayout Margin="0,0,0,10">
+
+                    <Label Text="REGULAR MEMBERSHIP" TextColor="White" FontSize="23" FontAttributes="Bold" FontFamily="Bebas-Regular" Margin="15,10,0,0"/>
+                    <Label Text="650 FOR 30 DAY" TextColor="White" FontSize="16" FontFamily="Bebas-Regular" Margin="3,12,0,0"/>
+
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+
+                    <Label Text="STUDENT MEMBERSHIP" TextColor="White" FontSize="23" FontAttributes="Bold" FontFamily="Bebas-Regular" Margin="15,0,0,0"/>
+                    <Label Text="400 FOR 30 DAY" TextColor="White" FontSize="16" FontFamily="Bebas-Regular" Margin="3,0,0,0"/>
+
+                </HorizontalStackLayout>
+
+                <Label Text="LIMITED PROMO" TextColor="White" FontAttributes="Bold" FontSize="23" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="15,13,0,0"/>
+
+                <Label Text="NO PROMOS YET" TextColor="White" FontSize="12" FontFamily="Bebas-Regular" HorizontalOptions="Center" Margin="0,17,0,0"/>
+
+            </VerticalStackLayout>
+
+        </Frame>
+
+    </VerticalStackLayout>
+
+</ContentPage>

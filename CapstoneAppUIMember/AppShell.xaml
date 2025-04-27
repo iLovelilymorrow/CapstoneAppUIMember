@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="CapstoneAppUIMember.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:CapstoneAppUIMember.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.NavBarIsVisible="False">
+
+    <ShellContent ContentTemplate="{DataTemplate views:ReceiptsView}" Route="Receipts"/> 
+    <ShellContent ContentTemplate="{DataTemplate views:HomeView}" Route="Home"/>
+    <ShellContent ContentTemplate="{DataTemplate views:ChangePasswordView}" Route="ChangePassword"/>
+    <ShellContent ContentTemplate="{DataTemplate views:SignUpView}" Route="SignUp"/>
+    <ShellContent ContentTemplate="{DataTemplate views:SignInView}" Route="SignIn"/>
+    <ShellContent ContentTemplate="{DataTemplate views:ForgotPasswordView}" Route="ForgotPassword"/>
+
+    <TabBar>
+        
+    </TabBar>
+
+</Shell>

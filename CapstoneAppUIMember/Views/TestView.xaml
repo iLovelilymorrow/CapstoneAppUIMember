@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CapstoneAppUIMember.Views.TestView"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="White">
+    
+
+    <VerticalStackLayout>
+        <!-- We’ll use VisualStateManager to change layout styles -->
+
+        <Grid x:Name="ResponsiveGrid" ColumnSpacing="10" RowSpacing="10" Padding="20" RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="*,*">
+
+            <Label Text="RESPONSIVE TEST VIEW" 
+                   Grid.Row="0" Grid.ColumnSpan="2"
+                   FontSize="24"
+                   HorizontalOptions="Center" />
+
+            <Editor Grid.Row="1" Grid.Column="0"
+                    x:Name="responsiveEditor"
+                    Placeholder="Write something..."
+                    AutoSize="TextChanges"
+                    BackgroundColor="#EEEEEE"
+                    HeightRequest="100"/>
+
+            <Button Grid.Row="1" Grid.Column="1"
+                    x:Name="responsiveButton"
+                    Text="Submit"
+                    BackgroundColor="#4CAF50"
+                    TextColor="White"/>
+
+            <!-- Visual State Manager handles screen responsiveness -->
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="Narrow">
+                            <VisualState.Setters>
+                                <!-- Stack vertically on small screens -->
+                                <Setter TargetName="responsiveEditor" Property="Grid.Column" Value="0"/>
+                                <Setter TargetName="responsiveEditor" Property="Grid.ColumnSpan" Value="2"/>
+                                <Setter TargetName="responsiveButton" Property="Grid.Row" Value="2"/>
+                                <Setter TargetName="responsiveButton" Property="Grid.Column" Value="0"/>
+                                <Setter TargetName="responsiveButton" Property="Grid.ColumnSpan" Value="2"/>
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </VisualStateManager.VisualStateGroups>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
