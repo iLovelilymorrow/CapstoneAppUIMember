@@ -5,17 +5,17 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:CapstoneAppUIMember.Views"
     Shell.FlyoutBehavior="Disabled"
-    Shell.NavBarIsVisible="False">
-
-    <ShellContent ContentTemplate="{DataTemplate views:ReceiptsView}" Route="Receipts"/> 
-    <ShellContent ContentTemplate="{DataTemplate views:HomeView}" Route="Home"/>
-    <ShellContent ContentTemplate="{DataTemplate views:ChangePasswordView}" Route="ChangePassword"/>
-    <ShellContent ContentTemplate="{DataTemplate views:SignUpView}" Route="SignUp"/>
-    <ShellContent ContentTemplate="{DataTemplate views:SignInView}" Route="SignIn"/>
-    <ShellContent ContentTemplate="{DataTemplate views:ForgotPasswordView}" Route="ForgotPassword"/>
+    Shell.NavBarIsVisible="False"
+    Shell.BackgroundColor="#747474"
+    Shell.TabBarBackgroundColor="Green">
 
     <TabBar>
-        
+        <ShellContent ContentTemplate="{DataTemplate views:HomeView}" Route="Home" Title="Home"/>
+        <ShellContent ContentTemplate="{DataTemplate views:ChangePasswordView}" Route="ChangePassword" Title="ChangePassword"/>
+        <ShellContent ContentTemplate="{DataTemplate views:SignUpView}" Route="SignUp" Title="SignUp"/>
+        <ShellContent ContentTemplate="{DataTemplate views:SignInView}" Route="SignIn" Title="SignIn"/>
+        <ShellContent ContentTemplate="{DataTemplate views:ForgotPasswordView}" Route="ForgotPassword" Title="ForgotPassword"/>
+        <ShellContent ContentTemplate="{DataTemplate views:TestView2}" Route="TEST2" Title="TEST2"/>
     </TabBar>
 
 </Shell>

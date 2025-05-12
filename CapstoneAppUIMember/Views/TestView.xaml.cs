@@ -20,9 +20,9 @@ public partial class TestView : ContentPage
 
     private void UpdateVisualState()
     {
-     Console.WriteLine($"PAGE WIDTH: {this.Width}");
+     var orientation = DeviceDisplay.MainDisplayInfo.Orientation;
 
-     if(this.Width < 720)
+     if(orientation == DisplayOrientation.Portrait)
         VisualStateManager.GoToState(ResponsiveGrid, "Narrow");
      else
         VisualStateManager.GoToState(ResponsiveGrid, "Normal");
